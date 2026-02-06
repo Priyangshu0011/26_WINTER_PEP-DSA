@@ -65,7 +65,6 @@ int main()
     int n;
     cout<<"Enter size of queue: ";
     cin>>n;
-    int *arr=new int[n];
     Queue q(n);
     int choice, val;
     while (true) {
