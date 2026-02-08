@@ -60,12 +60,22 @@ void mergeSort(int arr[], int left, int right)
 }
 int main()
 {
-    int arr[] = {12, 11, 13, 5, 6, 7};
-    int n = sizeof(arr) / sizeof(arr[0]);
+   int n;
+    cout<<"Enter number of elements: ";
+    cin>>n;
+    int arr[n];
+    cout<<"Enter elements: ";
+    for(int i=0; i<n; i++)
+    {
+        cin>>arr[i];
+    }
     mergeSort(arr, 0, n - 1);
-    cout << "Sorted array: \n";
+    cout<<"Sorted array: ";
     for (int i = 0; i < n; i++)
+    {
         cout << arr[i] << " ";
+    }
+    cout << endl;
     return 0;
 }
 //Explanation:
