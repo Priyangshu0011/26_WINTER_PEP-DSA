@@ -7,7 +7,7 @@ int main() {
     cout << "Enter the size of the stack: ";
     cin >> n;
 
-    int* stack = new int[n];
+    int* stack = new int[n]; // Dynamically allocate an array of size n for the stack
     int top = -1;
 
     int choice, value;
